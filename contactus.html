@@ -2,9 +2,129 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>$Title$</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Empowered Voices</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    brandDarkBlue: '#1e3a8a',
+                    brandBlue: '#2563eb',
+                    brandBlueLight: '#eff6ff',
+                    brandYellow: '#facc15',
+                    brandYellowLight: '#fef9c3',
+                    brandYellowDark: '#ca8a04'
+                },
+                fontFamily: { sans: ['Plus Jakarta Sans', 'sans-serif'], serif: ['Playfair Display', 'serif'] }
+            }
+        }
+    }
+  </script>
 </head>
-<body>
-$END$
+<body class="bg-blue-50/50 text-gray-900 font-sans selection:bg-brandYellow selection:text-brandDarkBlue">
+
+<header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm border-b-4 border-brandYellow">
+  <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+    <a href="empoweredvoice.html" class="flex items-center space-x-3">
+      <img src="logo.png" alt="Empowered Voices Logo" class="h-14 w-14 object-contain rounded-xl">
+      <span class="font-bold text-xl tracking-wider text-brandDarkBlue uppercase hidden sm:inline">EMPOWERED<span class="text-brandYellowDark font-extrabold">VOICES</span></span>
+    </a>
+    <nav class="hidden md:flex space-x-8 font-bold text-gray-600 text-sm uppercase tracking-wider">
+      <a href="empoweredvoice.html" class="hover:text-brandBlue transition-colors">Home</a>
+      <a href="about.html" class="hover:text-brandBlue transition-colors">About Us</a>
+      <a href="empoweredvoice.html#get-involved" class="hover:text-brandBlue transition-colors">Get Involved</a>
+      <a href="contactus.html" class="text-brandBlue font-bold tracking-wide transition-colors">Contact Us</a>
+      <a href="privacy.html" class="hover:text-brandBlue transition-colors">Privacy Policy</a>
+    </nav>
+    <div class="hidden md:flex items-center">
+      <a href="empoweredvoice.html#get-involved" class="bg-brandBlue text-white px-6 py-2.5 rounded-full font-bold text-xs uppercase tracking-widest hover:bg-brandDarkBlue hover:scale-105 transition-all shadow-md">Volunteer</a>
+    </div>
+  </div>
+</header>
+
+<main class="py-16 px-6 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+  <div class="lg:col-span-5 space-y-6">
+    <span class="text-brandBlue font-extrabold uppercase tracking-widest text-xs bg-brandBlueLight px-4 py-1.5 rounded-full inline-block">Connect with us</span>
+    <h1 class="font-serif font-bold text-4xl text-brandDarkBlue tracking-tight leading-none">Get in Touch</h1>
+    <p class="text-gray-600 text-lg font-light leading-relaxed">
+      Have questions about joining our scheduled tutoring tracks, sourcing local immigration guide copies, or coordinating textbook pipelines in Northwest Arkansas? Contact our team.
+    </p>
+
+    <div class="bg-brandDarkBlue text-white p-6 rounded-2xl shadow-md space-y-3">
+      <h4 class="font-bold text-brandYellow text-sm uppercase tracking-wider">NWA Demographics Context</h4>
+      <ul class="text-xs space-y-2 font-light text-blue-100 list-disc list-inside">
+        <li>180K Immigrants in Arkansas (2024 Context)</li>
+        <li>11.7% of Fayetteville Metro population are foreign-born</li>
+        <li>15K+ Marshallese reside in NWA (Largest U.S. community)</li>
+      </ul>
+    </div>
+
+    <div class="pt-2 space-y-4">
+      <div class="flex items-center space-x-4 bg-white border border-blue-100 p-4 rounded-xl shadow-sm">
+        <div class="bg-blue-50 text-brandBlue p-3 rounded-xl border border-blue-100">
+          <i class="fa-solid fa-envelope text-lg"></i>
+        </div>
+        <div>
+          <h4 class="font-bold text-gray-400 text-xs uppercase tracking-wider">Direct Communications</h4>
+          <a href="mailto:empoweredvoices29@gmail.com" class="text-brandBlue font-bold hover:underline text-sm">empoweredvoices29@gmail.com</a>
+        </div>
+      </div>
+      <div class="flex items-center space-x-4 bg-white border border-blue-100 p-4 rounded-xl shadow-sm">
+        <div class="bg-brandYellowLight text-brandYellowDark p-3 rounded-xl border border-brandYellow/20">
+          <i class="fa-solid fa-location-dot text-lg"></i>
+        </div>
+        <div>
+          <h4 class="font-bold text-gray-400 text-xs uppercase tracking-wider">Central Hub</h4>
+          <p class="text-gray-800 font-semibold text-sm">Northwest Arkansas Operations</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="lg:col-span-7 bg-white p-8 md:p-10 border border-blue-100 shadow-md rounded-3xl">
+    <h3 class="font-serif font-bold text-2xl text-brandDarkBlue mb-6">Send an Official Message</h3>
+
+    <form action="https://formspree.io/f/YOUR_FORM_ID_HERE" method="POST" class="space-y-5" id="contact-form">
+      <input type="hidden" name="_next" value="thank-you.html">
+      <input type="hidden" name="_subject" value="Contact form submission">
+      <div>
+        <label class="block text-xs font-bold uppercase tracking-wider text-gray-600 mb-2">Full Name</label>
+        <input type="text" name="name" placeholder="Your Name" required class="w-full px-4 py-3 bg-blue-50/50 border border-blue-100 rounded-xl focus:outline-none focus:border-brandBlue focus:bg-white text-gray-900 transition-all">
+      </div>
+      <div>
+        <label class="block text-xs font-bold uppercase tracking-wider text-gray-600 mb-2">Email Address</label>
+        <input type="email" name="_replyto" placeholder="you@example.com" required class="w-full px-4 py-3 bg-blue-50/50 border border-blue-100 rounded-xl focus:outline-none focus:border-brandBlue focus:bg-white text-gray-900 transition-all">
+      </div>
+      <div>
+        <label class="block text-xs font-bold uppercase tracking-wider text-gray-600 mb-2">Subject Matter</label>
+        <input type="text" name="subject" placeholder="How can we help?" required class="w-full px-4 py-3 bg-blue-50/50 border border-blue-100 rounded-xl focus:outline-none focus:border-brandBlue focus:bg-white text-gray-900 transition-all">
+      </div>
+      <div>
+        <label class="block text-xs font-bold uppercase tracking-wider text-gray-600 mb-2">Your Detailed Message</label>
+        <textarea rows="4" name="message" placeholder="Type your message here..." required class="w-full px-4 py-3 bg-blue-50/50 border border-blue-100 rounded-xl focus:outline-none focus:border-brandBlue focus:bg-white text-gray-900 transition-all"></textarea>
+      </div>
+      <button type="submit" class="w-full bg-brandBlue hover:bg-brandDarkBlue text-white font-bold py-4 px-6 rounded-xl text-xs uppercase tracking-widest shadow-md hover:scale-[1.01] transition-all duration-300">
+        Submit Message <i class="fa-solid fa-paper-plane ml-2"></i>
+      </button>
+    </form>
+  </div>
+</main>
+
+<footer class="bg-brandDarkBlue text-white border-t-8 border-brandYellow py-12 px-6 rounded-t-[2rem]">
+  <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
+    <div class="flex items-center space-x-3">
+      <img src="logo.png" alt="Empowered Voices Logo" class="h-12 w-12 object-contain rounded-lg bg-white p-0.5">
+      <div>
+        <span class="font-bold text-lg tracking-wider uppercase">EMPOWERED<span class="text-brandYellow">VOICES</span></span>
+        <p class="text-xs text-blue-200 mt-1">&copy; 2026 Empowered Voices.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>
