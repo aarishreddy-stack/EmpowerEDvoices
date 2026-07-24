@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/empowerd-voices.iml" filepath="$PROJECT_DIR$/empowerd-voices.iml" />
+      <module fileurl="file://$PROJECT_DIR$/empowered-voices.iml" filepath="$PROJECT_DIR$/empowered-voices.iml" />
     </modules>
   </component>
 </project>

@@ -1,10 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Empowered Voices</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandDarkBlue: '#1e3a8a',
+                        brandBlue: '#2563eb',
+                        brandBlueLight: '#eff6ff',
+                        brandYellow: '#facc15',
+                        brandYellowLight: '#fef9c3',
+                        brandYellowDark: '#ca8a04'
+                    },
+                    fontFamily: { sans: ['Plus Jakarta Sans', 'sans-serif'], serif: ['Playfair Display', 'serif'] }
+                }
+            }
+        }
+    </script>
 </head>
-<body>
-$END$
+<body class="bg-blue-50/50 text-gray-800 font-sans antialiased selection:bg-brandYellow selection:text-brandDarkBlue">
+
+<header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm border-b-4 border-brandYellow">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+        <a href="empoweredvoices.html" class="flex items-center space-x-3">
+            <img src="logo.png" alt="Empowered Voices Logo" class="h-14 w-14 object-contain rounded-xl">
+            <span class="font-bold text-xl tracking-wider text-brandDarkBlue uppercase hidden sm:inline">EMPOWERED<span class="text-brandYellowDark font-extrabold">VOICES</span></span>
+        </a>
+        <nav class="hidden md:flex space-x-8 font-bold text-gray-600 text-sm uppercase tracking-wider">
+            <a href="empoweredvoices.html" class="hover:text-brandBlue transition-colors">Home</a>
+            <a href="about.html" class="hover:text-brandBlue transition-colors">About Us</a>
+            <a href="empoweredvoices.html#get-involved" class="hover:text-brandBlue transition-colors">Get Involved</a>
+            <a href="contactus.html" class="hover:text-brandBlue transition-colors">Contact Us</a>
+            <a href="privacy.html" class="text-brandBlue font-bold tracking-wide transition-colors">Privacy Policy</a>
+        </nav>
+        <div class="hidden md:flex items-center">
+            <a href="empoweredvoices.html#get-involved" class="bg-brandBlue text-white px-6 py-2.5 rounded-full font-bold text-xs uppercase tracking-widest hover:bg-brandDarkBlue hover:scale-105 transition-all shadow-md">Volunteer</a>
+        </div>
+    </div>
+</header>
+
+<main class="max-w-4xl mx-auto bg-white p-8 md:p-16 my-12 border border-blue-100 shadow-md rounded-3xl">
+    <header class="border-b border-gray-100 pb-6 mb-8">
+        <h1 class="font-serif font-bold text-4xl text-brandDarkBlue mb-2">Privacy Policy</h1>
+        <p class="text-xs font-bold uppercase tracking-widest text-gray-400">Last Updated: July 2026</p>
+    </header>
+
+    <article class="space-y-6 text-gray-600 font-light leading-relaxed text-base">
+        <p><strong>Empowered Voices</strong> is completely committed to protecting the privacy of our students, volunteers, regional partner networks, and platform visitors. This policy configures how information is handled securely across our NWA program framework registries.</p>
+
+        <h2 class="font-serif font-bold text-xl text-brandDarkBlue pt-4 border-b border-gray-100 pb-2">Information Shared via Forms</h2>
+        <p>Information collected via our central Google Form registries (such as Volunteer Network entries or Chapter setup details) is structurally used purely to evaluate integration options inside local school pipelines and match students with mentors securely.</p>
+
+        <h2 class="font-serif font-bold text-xl text-brandDarkBlue pt-4 border-b border-gray-100 pb-2">Regional Integrity Focus</h2>
+        <p>Any local data tracking, matching metrics, or school resource communications honor strict privacy guidelines to ensure a completely protected environment for immigrant-headed households, native-born citizens, and youth advocates alike.</p>
+
+        <h2 class="font-serif font-bold text-xl text-brandDarkBlue pt-4 border-b border-gray-100 pb-2">Third-Party Websites & Links</h2>
+        <p>Our website connects to global forms. Empowered Voices holds no responsibility for separate external privacy policies. We encourage reviewing individual structural form policies during submission processes.</p>
+
+        <h2 class="font-serif font-bold text-xl text-brandDarkBlue pt-4 border-b border-gray-100 pb-2">Contact Information</h2>
+        <p>If you have any questions, concerns, or requests regarding this Privacy Policy or our privacy practices, please reach out directly via: <a href="mailto:empoweredvoices29@gmail.com" class="text-brandBlue font-semibold hover:underline">empoweredvoices29@gmail.com</a>.</p>
+    </article>
+</main>
+
+<footer class="bg-brandDarkBlue text-white border-t-8 border-brandYellow py-12 px-6 rounded-t-[2rem]">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
+        <div class="flex items-center space-x-3">
+            <img src="logo.png" alt="Empowered Voices Logo" class="h-12 w-12 object-contain rounded-lg bg-white p-0.5">
+            <div>
+                <span class="font-bold text-lg tracking-wider uppercase">EMPOWERED<span class="text-brandYellow">VOICES</span></span>
+                <p class="text-xs text-blue-200 mt-1">&copy; 2026 Empowered Voices.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
 </body>
 </html>

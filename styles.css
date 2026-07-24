@@ -1,0 +1,48 @@
+/* Basic responsive styles inspired by modern nonprofit sites */
+:root{
+  --accent:#6c63ff; /* purple */
+  --muted:#6b7280;
+  --bg:#ffffff;
+  --text:#0f172a;
+  --container:1100px;
+}
+*{box-sizing:border-box}
+body{font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);margin:0;line-height:1.5}
+.container{max-width:var(--container);margin:0 auto;padding:1.5rem}
+.header-inner{display:flex;align-items:center;justify-content:space-between}
+.logo img{height:44px}
+.main-nav{display:flex;gap:1rem;align-items:center}
+.main-nav a{color:var(--text);text-decoration:none;font-weight:600}
+.donate-btn{background:var(--accent);color:#fff;padding:.5rem .8rem;border-radius:6px}
+.nav-toggle{display:none;background:none;border:0;font-size:1.4rem}
+.site-header{border-bottom:1px solid #eef2ff}
+.hero{background:linear-gradient(180deg,#f9f8ff 0%,#fff 60%);padding:3.5rem 0}
+.hero-inner{padding:2rem 0;text-align:left}
+.hero h1{font-size:2.1rem;margin:0 0 .5rem}
+.hero p{color:var(--muted);max-width:60ch}
+.hero-actions{margin-top:1rem}
+.primary{background:var(--accent);color:#fff;padding:.7rem 1rem;border-radius:8px;text-decoration:none;font-weight:700}
+.secondary{background:transparent;border:2px solid var(--accent);color:var(--accent);padding:.6rem .9rem;border-radius:8px;text-decoration:none;margin-left:.5rem}
+.section{padding:2.5rem 0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.card{background:#fff;border-radius:8px;padding:1.3rem;box-shadow:0 6px 18px rgba(15,23,42,0.06)}
+.stories{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
+.story{background:#fff;padding:1rem;border-radius:8px}
+.cta-row{display:flex;gap:1rem;margin-top:1rem}
+.donate{background:#fff7ff;border-radius:8px;text-align:center;padding:2rem}
+.contact-form{display:grid;gap:.75rem;max-width:560px}
+.contact-form input,.contact-form textarea{padding:.7rem;border:1px solid #e6e9ef;border-radius:6px}
+.site-footer{border-top:1px solid #eef2ff;padding:2rem 0;margin-top:2rem}
+.footer-inner{display:flex;justify-content:space-between;align-items:center}
+.legal{color:var(--muted);padding:1rem 0;font-size:.9rem}
+@media (max-width:900px){
+  .grid{grid-template-columns:1fr}
+  .stories{grid-template-columns:1fr}
+}
+@media (max-width:700px){
+  .main-nav{display:none}
+  .nav-toggle{display:block}
+  .hero h1{font-size:1.6rem}
+}
+/* small utilities */
+.text-muted{color:var(--muted)}
