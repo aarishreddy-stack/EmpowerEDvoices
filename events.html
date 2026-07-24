@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events | Empowered Voices</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    brandDarkBlue: '#1e3a8a',
+                    brandBlue: '#2563eb',
+                    brandBlueLight: '#eff6ff',
+                    brandYellow: '#facc15',
+                    brandYellowLight: '#fef9c3',
+                    brandYellowDark: '#ca8a04'
+                },
+                fontFamily: { sans: ['Plus Jakarta Sans', 'sans-serif'], serif: ['Playfair Display', 'serif'] }
+            }
+        }
+    }
+  </script>
+</head>
+<body class="bg-blue-50/50 text-gray-900 font-sans selection:bg-brandYellow selection:text-brandDarkBlue">
+
+<header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm border-b-4 border-brandYellow">
+  <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+    <a href="index.html" class="flex items-center space-x-3">
+      <img src="logo.png" alt="Empowered Voices Logo" class="h-14 w-14 object-contain rounded-xl">
+      <span class="font-bold text-xl tracking-wider text-brandDarkBlue uppercase hidden sm:inline">EMPOWERED<span class="text-brandYellowDark font-extrabold">VOICES</span></span>
+    </a>
+    <nav class="hidden md:flex space-x-8 font-bold text-gray-600 text-sm uppercase tracking-wider">
+      <a href="index.html" class="hover:text-brandBlue transition-colors">Home</a>
+      <a href="about.html" class="hover:text-brandBlue transition-colors">About Us</a>
+      <a href="events.html" class="text-brandBlue font-bold tracking-wide transition-colors">Events</a>
+      <a href="index.html#get-involved" class="hover:text-brandBlue transition-colors">Get Involved</a>
+      <a href="contactus.html" class="hover:text-brandBlue transition-colors">Contact Us</a>
+      <a href="privacy.html" class="hover:text-brandBlue transition-colors">Privacy Policy</a>
+    </nav>
+    <div class="hidden md:flex items-center">
+      <a href="index.html#get-involved" class="bg-brandBlue text-white px-6 py-2.5 rounded-full font-bold text-xs uppercase tracking-widest hover:bg-brandDarkBlue hover:scale-105 transition-all shadow-md">Volunteer</a>
+    </div>
+  </div>
+</header>
+
+<main class="py-16 px-6 max-w-5xl mx-auto">
+  <div class="text-center max-w-3xl mx-auto mb-12">
+    <span class="text-brandBlue font-extrabold uppercase tracking-widest text-xs bg-brandBlueLight px-4 py-1.5 rounded-full inline-block mb-3">Community Initiatives</span>
+    <h1 class="font-serif font-bold text-4xl md:text-5xl text-brandDarkBlue mb-4">Upcoming Events</h1>
+    <p class="text-gray-600 text-lg font-light leading-relaxed">Join us in making a direct impact. Come out to support immigrant youth and connect with our community network.</p>
+  </div>
+
+  <div class="bg-white border border-blue-100 rounded-3xl shadow-lg overflow-hidden p-8 md:p-12 mb-12 relative">
+
+    <div class="flex flex-wrap items-center gap-3 mb-6">
+      <span class="bg-pink-100 text-pink-700 font-extrabold uppercase text-xs tracking-wider px-3 py-1 rounded-full flex items-center gap-1.5">
+        <i class="fa-solid fa-cookie-bite"></i> Fundraiser
+      </span>
+      <span class="bg-brandYellowLight text-brandYellowDark font-extrabold uppercase text-xs tracking-wider px-3 py-1 rounded-full flex items-center gap-1.5">
+        <i class="fa-solid fa-star"></i> First Friday
+      </span>
+    </div>
+
+    <div class="mb-8">
+      <h2 class="font-serif font-bold text-3xl md:text-4xl text-brandDarkBlue mb-4">Bake Sale: Sweet Treats. Big Impact.</h2>
+      <p class="text-gray-600 text-base md:text-lg font-light leading-relaxed max-w-3xl">
+        Every cookie you buy helps support immigrant youth and strengthen our community. Your contribution provides educational opportunities, essential resources, mentorship, and support for local families working toward a brighter future.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+
+      <div class="bg-blue-50/70 border border-blue-100 p-5 rounded-2xl text-center flex flex-col items-center justify-center">
+        <div class="bg-brandBlue text-white w-10 h-10 rounded-xl flex items-center justify-center mb-3 shadow-sm">
+          <i class="fa-solid fa-calendar-days text-lg"></i>
+        </div>
+        <p class="text-[10px] font-extrabold uppercase tracking-widest text-gray-400 mb-1">Date</p>
+        <p class="text-brandDarkBlue font-bold text-sm md:text-base">Aug 7, 2026</p>
+      </div>
+
+      <div class="bg-blue-50/70 border border-blue-100 p-5 rounded-2xl text-center flex flex-col items-center justify-center">
+        <div class="bg-brandYellowDark text-white w-10 h-10 rounded-xl flex items-center justify-center mb-3 shadow-sm">
+          <i class="fa-solid fa-location-dot text-lg"></i>
+        </div>
+        <p class="text-[10px] font-extrabold uppercase tracking-widest text-gray-400 mb-1">Location</p>
+        <p class="text-brandDarkBlue font-bold text-sm md:text-base">Bentonville Sq</p>
+      </div>
+
+      <div class="bg-blue-50/70 border border-blue-100 p-5 rounded-2xl text-center flex flex-col items-center justify-center">
+        <div class="bg-pink-500 text-white w-10 h-10 rounded-xl flex items-center justify-center mb-3 shadow-sm">
+          <i class="fa-solid fa-tag text-lg"></i>
+        </div>
+        <p class="text-[10px] font-extrabold uppercase tracking-widest text-gray-400 mb-1">Contribution</p>
+        <p class="text-brandDarkBlue font-bold text-sm md:text-base">$6 / cookie</p>
+      </div>
+
+      <div class="bg-blue-50/70 border border-blue-100 p-5 rounded-2xl text-center flex flex-col items-center justify-center">
+        <div class="bg-emerald-600 text-white w-10 h-10 rounded-xl flex items-center justify-center mb-3 shadow-sm">
+          <i class="fa-solid fa-heart text-lg"></i>
+        </div>
+        <p class="text-[10px] font-extrabold uppercase tracking-widest text-gray-400 mb-1">Hosted At</p>
+        <p class="text-brandDarkBlue font-bold text-sm md:text-base">First Friday</p>
+      </div>
+
+    </div>
+
+    <div class="bg-brandDarkBlue text-white p-6 rounded-2xl mb-8 border-l-4 border-brandYellow flex items-center space-x-4">
+      <div class="hidden sm:block text-brandYellow text-2xl">
+        <i class="fa-solid fa-quote-left"></i>
+      </div>
+      <p class="text-xs md:text-sm font-light text-blue-100 leading-relaxed">
+        <strong class="text-white font-semibold">Why your support matters:</strong> Together, we can create opportunities, strengthen local educational pipelines, and build a stronger community for youth and families across Northwest Arkansas.
+      </p>
+    </div>
+
+    <div class="flex flex-col sm:flex-row gap-4 justify-start">
+      <a href="index.html#get-involved" class="inline-block text-center bg-brandBlue hover:bg-brandDarkBlue text-white font-bold text-xs uppercase tracking-widest px-8 py-4 rounded-xl shadow-md transition-all">
+        Volunteer At Event <i class="fa-solid fa-arrow-right ml-2"></i>
+      </a>
+      <a href="contactus.html" class="inline-block text-center border-2 border-brandBlue text-brandBlue hover:bg-brandBlue hover:text-white font-bold text-xs uppercase tracking-widest px-8 py-4 rounded-xl transition-all">
+        Have Questions?
+      </a>
+    </div>
+
+  </div>
+</main>
+
+<footer class="bg-brandDarkBlue text-white border-t-8 border-brandYellow py-12 px-6 rounded-t-[2rem]">
+  <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
+    <div class="flex items-center space-x-3">
+      <img src="logo.png" alt="Empowered Voices Logo" class="h-12 w-12 object-contain rounded-lg bg-white p-0.5">
+      <div>
+        <span class="font-bold text-lg tracking-wider uppercase">EMPOWERED<span class="text-brandYellow">VOICES</span></span>
+        <p class="text-xs text-blue-200 mt-1">&copy; 2026 Empowered Voices.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
